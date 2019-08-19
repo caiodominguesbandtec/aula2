@@ -1,0 +1,86 @@
+
+Aluno@HSL089 MINGW64 ~/Desktop
+$ git clone https://github.com/caiodominguesbandtec/aula2.git
+Cloning into 'aula2'...
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (6/6), done.
+
+Aluno@HSL089 MINGW64 ~/Desktop
+$ cd aula2/
+
+Aluno@HSL089 MINGW64 ~/Desktop/aula2 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        arquivo2.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Aluno@HSL089 MINGW64 ~/Desktop/aula2 (master)
+$ git add .
+
+Aluno@HSL089 MINGW64 ~/Desktop/aula2 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   arquivo2.txt
+
+
+Aluno@HSL089 MINGW64 ~/Desktop/aula2 (master)
+$ git commit -m "criação do arquivo 2"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Aluno@HSL089.(none)')
+
+Aluno@HSL089 MINGW64 ~/Desktop/aula2 (master)
+$ ^C
+
+Aluno@HSL089 MINGW64 ~/Desktop/aula2 (master)
+$ git config --global user.email "you@example.com"
+
+Aluno@HSL089 MINGW64 ~/Desktop/aula2 (master)
+$ git config --global user.email "caio.domingues@bandtec.com.br"
+
+Aluno@HSL089 MINGW64 ~/Desktop/aula2 (master)
+$ git config --global user.name "caiodominguesbandtec"
+
+Aluno@HSL089 MINGW64 ~/Desktop/aula2 (master)
+$ git commit -m "criação do arquivo 2"
+[master 0dd0ce1] criação do arquivo 2
+ 1 file changed, 1 insertion(+)
+ create mode 100644 arquivo2.txt
+
+Aluno@HSL089 MINGW64 ~/Desktop/aula2 (master)
+$ git push
+Username for 'https://github.com': caiodominguesbandtec
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 338 bytes | 338.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/caiodominguesbandtec/aula2.git
+   1d696fb..0dd0ce1  master -> master
+
+Aluno@HSL089 MINGW64 ~/Desktop/aula2 (master)
+$
