@@ -83,4 +83,48 @@ To https://github.com/caiodominguesbandtec/aula2.git
    1d696fb..0dd0ce1  master -> master
 
 Aluno@HSL089 MINGW64 ~/Desktop/aula2 (master)
+
+Aluno@HSL089 MINGW64 ~/Desktop/aula2 (master)
+$ git pull
+remote: Enumerating objects: 8, done.
+remote: Counting objects: 100% (8/8), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 6 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (6/6), done.
+From https://github.com/caiodominguesbandtec/aula2
+   0dd0ce1..a908aac  master     -> origin/master
+Updating 0dd0ce1..a908aac
+Fast-forward
+ arquivo2.txt  |  2 +-
+ passo_a_passo | 86 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 87 insertions(+), 1 deletion(-)
+ create mode 100644 passo_a_passo
+
+Aluno@HSL089 MINGW64 ~/Desktop/aula2 (master)
+$ git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/caiodominguesbandtec/aula2
+   a908aac..332227b  master     -> origin/master
+Updating a908aac..332227b
+Fast-forward
+ arquivo2.txt | 6 ++++++
+ 1 file changed, 6 insertions(+)
+
+Aluno@HSL089 MINGW64 ~/Desktop/aula2 (master)
+$ git log -- oneline
+
+Aluno@HSL089 MINGW64 ~/Desktop/aula2 (master)
+$ git log --oneline
+332227b (HEAD -> master, origin/master, origin/HEAD) Update arquivo2.txt
+a908aac Update arquivo2.txt
+8fcf446 Create passo_a_passo
+0dd0ce1 criação do arquivo 2
+1d696fb Create arquivo1.txt
+c038e12 Initial commit
+
+Aluno@HSL089 MINGW64 ~/Desktop/aula2 (master)
 $
